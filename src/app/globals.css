@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: #B68F40;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.input-field {
+  border: 1px solid #272727;
+  color: #272727;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
